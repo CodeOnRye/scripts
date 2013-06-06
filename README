@@ -1,1 +1,15 @@
-Hello World
+This is a repo of some random scripts I have created.
+
+Currently there are the following:
+
+===============
+kbd_light_up.sh
+===============
+This is a script that toggles the backlight on the UX31A Zenbook up.  By default
+install of Xubuntu 13.04 the keys do not work.  This is used to replace the
+function combination.
+
+=================
+kbd_light_down.sh
+=================
+Similar to above, this lowers the backlight.

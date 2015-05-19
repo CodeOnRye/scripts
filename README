@@ -13,3 +13,8 @@ function combination.
 kbd_light_down.sh
 =================
 Similar to above, this lowers the backlight.
+
+==============
+iptables.sh
+=============
+Rebuilds the iptables for my home router.  Also creates a timestamped backup of the current config incase there was an error.

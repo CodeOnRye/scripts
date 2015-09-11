@@ -1,0 +1,10 @@
+This is a fix for the touchscreen in gnome3.  When the computer goes to suspend the touchscreen fails to start again.  This adds a script that resumes it, which can be run manually, or you can add a systemd service to have it kick in when the computer is resumed.
+
+Included files:
+resume.sh - reloads the modules for the touch screen, must be run as root.
+touchscreen-fix.service - systemd service file that will kick off the resume.sh file on resume.
+
+Install:
+Move the resume.sh file to /opt/touchscreen-fix/resume.sh or whereever you would like, be sure to update the .service file to reflect the new location.  Also make sure the .sh file is exictuable with a chmod +x.
+
+Move the touchscreen-fix.service file to /etc/systemd/system/touchscreen-fix.service. Then be sure to add it to your services with a systemctl enable. 
